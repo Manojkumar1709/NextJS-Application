@@ -1,5 +1,14 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Setup
+
+The first thing to do is to clone the repository:
+
+```sh
+$ git clone https://github.com/Manojkumar1709/NextJS-Application.git
+$ cd NextJS-Application
+```
+
 ## Getting Started
 
 First, run the development server:
@@ -19,6 +28,19 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+
+## Requirement
+
+- Docker
+
+Go into the project directory and run the command:
+
+```
+$ docker build -t nextjs-app-image .
+$ docker run -d -p 3000:3000 nextjs-app-image
+```
+
+Open `http://localhost:3000` and enjoy!
 
 ## Learn More
 
